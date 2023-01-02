@@ -9,7 +9,7 @@
 
 ## Project Setup
 * NPM install
-## Compile and run project
+## Compile and Run project
 * NPM run serve
 
 
