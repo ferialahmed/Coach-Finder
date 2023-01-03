@@ -37,7 +37,7 @@ export default {
   data() {
     const schema = yup.object().shape({
       email: yup.string().email().required('email is required'),
-      password: yup.string().matches(/^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,'Password must contain at least one uppercase letter and one number')
+      password: yup.string().matches(/^(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,'Use 8 or more characters with a mix of uppercase letters and numbers')
       .required('Password is required')
     })
     return {
