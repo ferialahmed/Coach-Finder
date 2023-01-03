@@ -15,7 +15,7 @@ export default {
       if (response.ok) {
         context.commit('addCoach', {
           ...data,
-          id: context.rootGetters.userId,
+          id: context.rootGetters.stateId,
         });
       }else{
         throw new Error('Error in saving data');

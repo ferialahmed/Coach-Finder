@@ -8,7 +8,7 @@
         v-model.trim="firstName"
         @blur="clearValidity"
       />
-      <p v-if="firstNameValidity">This field can't be empty!</p>
+      <p v-if="!firstNameValidity">This field can't be empty!</p>
     </div>
     <div class="form-control" :class="{ invalid: !lastNameValidity }">
       <label for="lastName">Lastname</label>
@@ -18,7 +18,7 @@
         v-model.trim="lastName"
         @blur="clearValidity"
       />
-      <p v-if="lastNameValidity">This field can't be empty!</p>
+      <p v-if="!lastNameValidity">This field can't be empty!</p>
     </div>
     <div class="form-control" :class="{ invalid: !descriptionValidity }">
       <label for="description">Description</label>
