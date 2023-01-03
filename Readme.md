@@ -13,5 +13,5 @@
 * NPM run serve
 ## Website Link
 * Firebase Hoisting
-.. * https://getcoach-12e57.web.app/coaches
+  * https://getcoach-12e57.web.app/coaches
 
