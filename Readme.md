@@ -12,6 +12,6 @@
 ## Compile and Run project
 * NPM run serve
 ## Website Link
-*Firebase Hoisting
+* Firebase Hoisting
 https://getcoach-12e57.web.app/coaches
 
