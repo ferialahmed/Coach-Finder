@@ -82,14 +82,18 @@ export default {
       };
       try{
       const response = await this.schema.validate(this.fields, {abortEarly: false})
-      if(response.ok) {console.log('success');
-    this.formValidity = true}
+      console.log(response)
+      if(response) {
+        console.log('success');
+        this.errors.email = '';
+        this.errors.password = '';
+        this.formValidity = true;
+      }
       }catch(err){
           err.inner.forEach(error => {
           this.errors[error.path] = error.message;
           this.formValidity = false;
       })}
-      console.log('why not')
       if (this.formValidity === true) {
         this.isLoading = true;
         try {
